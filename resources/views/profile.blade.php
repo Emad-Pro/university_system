@@ -87,7 +87,7 @@
     <header class="bg-white py-3 px-5 flex justify-between items-center header-border sticky top-0 z-50">
         
         <div class="flex items-center gap-4">
-            <img src="{{ asset('images/logo.png') }}" class="h-10 md:h-12 w-auto" alt="KSU Logo">
+             <img src="{{ asset('images/logo.svg') }}" class="h-8 md:h-10 w-auto" alt="KSU Logo">
         </div>
 
         <!-- <div class="hidden md:flex items-center text-gray-600 font-bold text-sm">
@@ -205,7 +205,7 @@
                         <p class="text-green-600 font-bold">هنا يظهر جدول الحصص...</p>
                     @else
                         <p class="text-red-600 font-bold text-xl">لا يوجد مقررات مسجلة</p>
-                         <p class="text-red-600 font-bold text-xl"> سيتم إدارج الجدول الدراسي للفصل الثاني 1447هـ - 1448 هـ قريباً
+                         <p class="text-red-600 font-bold text-xl"> سيتم إدراج الجدول الدراسي للفصل الثاني 1447هـ - 1448 هـ قريباً
                             
                          </p>
                     @endif
