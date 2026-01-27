@@ -188,7 +188,7 @@
 
             <div class="mb-4 text-right">
                 <label class="text-[#2e76a8] font-bold text-xl mb-2 block">اسم المستخدم</label>
-                <input type="text" name="university_id" class="mobile-input text-right" value="44376803">
+                <input type="text" name="university_id" class="mobile-input text-right" >
             </div>
             
             <div class="mb-8 text-right">
