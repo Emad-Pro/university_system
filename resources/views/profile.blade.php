@@ -137,7 +137,7 @@
                 <div class="text-right flex-1">
                     <p class="text-black font-bold text-xl mb-1">اسم الطالب</p>
                     
-                    <h2 class="text-ksu font-bold text-xl md:text-2xl mb-2">{{ $student->name }}</h2> 
+                    <h2 class="text-ksu font-bold text-lg md:text-l mb-2">{{ $student->name }}</h2> 
                     
                     <p class="text-black font-bold text-lg">فصل التسجيل</p>
                 </div>
@@ -204,7 +204,7 @@
                         <p class="text-green-600 font-bold">هنا يظهر جدول الحصص...</p>
                     @else
                         <p class="text-red-600 font-bold text-xl">لا يوجد مقررات مسجلة</p>
-                         <p class="text-red-600 font-100 text-xl"> سيتم إدراج الجدول الدراسي للفصل الثاني 1447هـ-1448هـ قريبا
+                         <p class="text-red-600 font-bold text-xl"> سيتم إدراج الجدول الدراسي للفصل الثاني 1447هـ/1448هـ قريبا
                             
                          </p>
                     @endif
