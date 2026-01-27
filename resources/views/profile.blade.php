@@ -191,7 +191,7 @@
                 <div class="text-left mb-6">
                     <p class="text-black font-bold text-lg mb-1">الفصل الثاني 1447/1448</p>
                     <div class="flex flex-col items-center">
-                        <h2 class="text-black font-bold text-2xl">جدول الطالب</h2>
+                        <h2 class="text-black font-bold text-2xl">صفحة الطالب</h2>
                         <div class="custom-underline items-center">
                             <div class="line-blue"></div>
                             <div class="line-black"></div>
