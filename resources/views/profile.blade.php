@@ -211,9 +211,15 @@
                 </div>
             </div>
 
-            <div class="text-left mt-4">
-                <button class="btn-back" onclick="history.back()">رجوع</button>
-            </div>
+        <div class="text-left mt-4">
+    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+        @csrf
+    </form>
+
+    <button class="btn-back" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+        رجوع
+    </button>
+</div>
         </div>
 
     </main>
