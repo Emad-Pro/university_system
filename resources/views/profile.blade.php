@@ -204,7 +204,7 @@
                         <p class="text-green-600 font-bold">هنا يظهر جدول الحصص...</p>
                     @else
                         <p class="text-red-600 font-bold text-xl">لا يوجد مقررات مسجلة</p>
-                         <p class="text-red-600 font-200 text-xl"> سيتم إدراج الجدول الدراسي للفصل الثاني 1447هـ - 1448 هـ قريباً
+                         <p class="text-red-600 font-100 text-xl"> سيتم إدراج الجدول الدراسي للفصل الثاني 1447هـ-1448هـ قريبا
                             
                          </p>
                     @endif
