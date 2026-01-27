@@ -135,7 +135,7 @@
                     </svg>
                 </div>
                 <div class="text-right flex-1">
-                    <p class="text-black font-bold text-lg mb-1">اسم الطالب</p>
+                    <p class="text-black font-bold text-xl mb-1">اسم الطالب</p>
                     
                     <h2 class="text-ksu font-bold text-xl md:text-2xl mb-2">{{ $student->name }}</h2> 
                     
@@ -144,46 +144,45 @@
             </div>
 
             <div class="space-y-6">
-                <div class="text-right">
-                    <div class="flex items-center gap-2 mb-1 justify-end flex-row-reverse">
-                        <span class="text-black font-bold text-lg">رقم الطالب</span> 
-                        <div class="info-icon">
-                            <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
-                        </div>
-                    </div>
-                    
-                    <p class="text-ksu font-bold text-xl font-mono" dir="ltr">{{ $student->university_id }}</p>
-                </div>
+           <div class="text-right">
+    <div class="flex items-center gap-2 mb-1 justify-start">
+        <div class="info-icon">
+            <svg viewBox="0 0 24 24" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
+        </div>
+        <span class="text-black font-bold text-lg">رقم الطالب</span> 
+    </div>
+    
+    <p class="text-ksu  text-xl pr-7" dir="ltr">
+        {{ $student->university_id }}
+    </p>
+</div>
 
                 <div class="text-right">
-                    <div class="flex items-center gap-2 mb-1 justify-end flex-row-reverse">
-                        <span class="text-black font-bold text-lg">الكلية</span>
-                        <div class="info-icon">
-                            <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"></path></svg>
-                        </div>
-                    </div>
-                    
-                    <p class="text-ksu font-bold text-xl">{{ $student->college }}</p>
-                </div>
+    <div class="flex items-center gap-2 mb-1 justify-start">
+        <div class="info-icon">
+            <svg viewBox="0 0 24 24" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"></path></svg>
+        </div>
+        <span class="text-black font-bold text-lg">الكلية</span>
+    </div>
+    <p class="text-ksu font-bold text-xl pr-7">{{ $student->college }}</p>
+</div>
 
-                <div class="text-right">
-                    <div class="flex items-center gap-2 mb-1 justify-end flex-row-reverse">
-                        <span class="text-black font-bold text-lg">التخصص</span>
-                        <div class="info-icon">
-                            <svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
-                        </div>
-                    </div>
-                    
-                    <p class="text-ksu font-bold text-xl">{{ $student->major }}</p>
-                </div>
+<div class="text-right">
+    <div class="flex items-center gap-2 mb-1 justify-start">
+      <div class="info-icon">
+            <svg viewBox="0 0 24 24" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"></path></svg>
+        </div>
+        <span class="text-black font-bold text-lg">التخصص</span>
+    </div>
+    <p class="text-ksu font-bold text-xl pr-7">{{ $student->major }}</p>
+</div>
 
-                <div class="text-right">
-                    <div class="flex items-center gap-2 mb-1 justify-end flex-row-reverse">
-                        <span class="text-black font-bold text-lg">المقر</span>
-                    </div>
-                    
-                    <p class="text-ksu font-bold text-xl">{{ $student->campus }}</p>
-                </div>
+<div class="text-right">
+    <div class="flex items-center gap-3 mb-1 justify-start">
+        <span class="text-black font-bold text-lg">المقر</span>
+    </div>
+    <p class="text-ksu font-bold text-xl pr-7">{{ $student->campus }}</p>
+</div>
             </div>
         </div>
 
@@ -205,7 +204,7 @@
                         <p class="text-green-600 font-bold">هنا يظهر جدول الحصص...</p>
                     @else
                         <p class="text-red-600 font-bold text-xl">لا يوجد مقررات مسجلة</p>
-                         <p class="text-red-600 font-bold text-xl"> سيتم إدراج الجدول الدراسي للفصل الثاني 1447هـ - 1448 هـ قريباً
+                         <p class="text-red-600 font-200 text-xl"> سيتم إدراج الجدول الدراسي للفصل الثاني 1447هـ - 1448 هـ قريباً
                             
                          </p>
                     @endif
@@ -213,7 +212,7 @@
             </div>
 
             <div class="text-left mt-4">
-                <button class="btn-back">رجوع</button>
+                <button class="btn-back" onclick="history.back()">رجوع</button>
             </div>
         </div>
 
