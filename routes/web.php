@@ -13,7 +13,9 @@ Route::post('/', [AuthController::class, 'login']);
 Route::get('/register', [AuthController::class, 'showRegister'])->name('register');
 Route::post('/register', [AuthController::class, 'register']);
 // 3. رابط لوحة التحكم (Dashboard) بعد نجاح الدخول
-Route::get('/dashboard', [StudentController::class, 'showProfile'])->name('dashboard');
+Route::get('/dashboard', [StudentController::class, 'showProfile'])
+    ->name('dashboard')
+    ->middleware('auth');
 Route::post('/logout', function () {
     Auth::logout();
     request()->session()->invalidate();
